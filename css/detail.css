@@ -1,0 +1,106 @@
+.main-container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  background-color: black;
+}
+.navbar {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.navbar div {
+  text-align: center;
+  cursor: pointer;
+}
+.navbar div h5 {
+  margin-top: -10px;
+}
+.slide-container {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+.pagination {
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+  display: flex;
+}
+.pagination .lidiv {
+  height: 15px;
+  width: 20px;
+  border-radius: 40px;
+  margin-left: 5px;
+  background-color: white;
+}
+.pagination .lidiv.active {
+  width: 30px;
+  background-color: black;
+}
+.imagesection {
+  width: inherit;
+  object-fit: cover;
+}
+.imagesection img {
+  width: 100%;
+  object-fit: contain;
+}
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: center;
+}
+.package-container {
+  margin: 20px;
+  padding: 20px;
+  border: 0px;
+  border-radius: 15px;
+  background-color: white;
+}
+.package-container h3:nth-child(1) {
+  text-align: center;
+}
+.package-container h3 {
+  margin-bottom: 10px;
+}
+.package-container .bullet-point {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.package-container .bullet-point div p {
+  margin-bottom: 10px;
+}
+
+.bottom-navbar {
+  display: flex;
+  z-index: 5;
+  background-color: beige;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar-icons {
+  text-align: center;
+  font-size: 1rem;
+  color: #999;
+}
+.navbar-icons:hover {
+  color: black;
+  cursor: pointer;
+}
+.navbar-icons.active {
+  color: black;
+}

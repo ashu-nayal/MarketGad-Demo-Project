@@ -1,0 +1,62 @@
+.slider-container {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  margin: 10% auto;
+  overflow: auto;
+}
+.imagesection {
+  height: 50vh;
+  display: flex;
+  transition: all 0.4s ease-in;
+  display: block;
+  width: 100%;
+  flex-direction: row;
+}
+
+.imagesection img {
+  width: 100%;
+  height: inherit;
+}
+
+.next-btn,
+.prev-btn {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  font-size: 5rem;
+  color: white;
+}
+.next-btn {
+  right: 0;
+}
+.prev-btn {
+  left: 0;
+}
+.next-btn:hover,
+.prev-btn:hover {
+  background-color: rgba(0, 0, 255, 0.4);
+}
+.pagination {
+  position: absolute;
+  bottom: 10%;
+  left: 45%;
+  display: flex;
+}
+.lidiv {
+  height: 15px;
+  width: 15px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin-left: 5px;
+  background-color: white;
+}
+.lidiv.active {
+  background-color: dodgerblue;
+}
